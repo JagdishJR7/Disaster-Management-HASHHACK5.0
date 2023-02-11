@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before the Disaster</title>
+    <link rel="stylesheet" href="before.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="heading"><b>Before</b>The Disaster</h1>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/AfterD/after.html">AfterD</a></li>
+            <li><a href="/DuringD/during.html">DuringD</a></li>
+            <li><a href="/D preparedness/preparedness.html">Preparedness</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <p>This web app provides information on natural disasters and resources for preparedness and recovery.</p>
+    </main>
+
+    <footer>
+        <h1>Overview</h1>
+        <p>We all have a role to play in emergency and disaster preparedness. By knowing your role, you can prepare
+            for
+            what is within your control.</p>
+        <h1>Before an emergency</h1>
+        <p>Hazards vary depending on where you live. Identify the hazards near you so you can create your emergency
+            plan.</p>
+        <!-- <br> -->
+        <p>Emergencies affect us all differently and help is not always available in the way we expect. Learn what
+            steps
+            you can take to ensure your needs are met when it matters most.</p>
+
+        <button class="accordion">Be prepared</button>
+        <div class="panel">
+            <p>Individuals and families should be prepared to take care of themselves for at least 72 hours.</p>
+            <ul>
+                <li>Know the risks: Knowing the risks and hazards can help you and your loved ones prepare for the unexpected. For more information, see <a href="https://www.alberta.ca/emergency-preparedness.aspx">Emergency preparedness.</a></p>
+                <li><a href="https://www.alberta.ca/make-an-emergency-plan.aspx">Make an emergency plan:</a> A plan will help you cope with the stress of an emergency or disaster.</p>
+                <li><a href="https://www.alberta.ca/build-an-emergency-kit.aspx">Build an emergency kit:</a>By taking a few simple steps you can become better prepared to face a range of emergencies. Don’t forget to include your pets when building your kit.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Be Imformed</button>
+        <div class="panel">
+            <ul>
+                <li>Download the <a href="http://www.emergencyalert.alberta.ca/content/about/signup.html"> Alberta Emergency Alert</a>app for critical, life-saving alerts.</li>
+                <li>Check <a href="https://511.alberta.ca/"> Alberta 511</a>for current road conditions before you travel</li>
+                <li>Find out where your community will post information and updates during an emergency.</li>
+            </ul>
+        </div>
+        
+        <button class="accordion">Connect with neighbours</button>
+        <div class="panel">
+            <p>Being prepared is not only about having the right supplies. Your ability to recover from unexpected situations also relies on your connections to others.</p>
+            <ul>
+                <li>In many cases, community members such as neighbours, co-workers and friends in the affected area are first on-scene.</li>
+                <li>It is easier to offer help, or ask for help, when you know who is there.</li>
+                <li>If you are not already familiar with your neighbours, consider reaching out and making those connections.</li>
+
+            </ul>
+        </div>
+
+        <button class="accordion">Financial preparedness</button>
+        <div class="panel">
+            <p>In all emergencies or disasters, you can reduce stress by being financially prepared.</p>
+            <ul>
+                <li>Speak to an insurance agent about your specific needs.</li>
+                <li>Know your insurance options and policy limits. Make sure your home, vehicle, business and belongings are protected. Talk to your insurance agent to learn about what is not covered in your insurance policy.</li>
+                <li>If possible, consider an emergency savings account to cover temporary expenses while you are out of your home.</li>
+                <li>If you can, keep emergency cash handy in case banking services are unavailable.</li>
+                <li>If you have to evacuate, keep all receipts for additional expenses.</li>
+                <li>Prepare a detailed list of all your belongings. For more information, see <a href="http://www.ibc.ca/on/home/risk-management/home-inventory">home home-inventory</a></li>
+                <li>Know the 7 steps for making a home insurance claim. For more information, see <a href="http://www.ibc.ca/on/home/crisis-management/claims-management">Claims Management</a></li>
+
+            </ul>
+            <p>The Insurance Bureau of Canada (IBC) is ready to answer your questions. Connect with them by email at 'askibcwest@ibc.ca' or by telephone '1-844-227-5422' . For more information on insurance preparedness visit 'IBC'.</p>
+        </div>
+
+        <button class="accordion">Protect Your Pets</button>
+        <div class="panel">
+            <ul>
+                <li>A pet carrier stocked with supplies for a quick grab and go ensures your pet will have what it needs.</li>
+                <li>Have a phone list of animal shelters, veterinarians and kennel facilities that could house your pets if needed.</li>
+                <li>Create a buddy system with a neighbour in case one of you are unable to return home to pick up your pet.</li>
+                <li>In the case of an evacuation, never leave your pet behind.</li>
+
+            </ul>
+            <p>To learn more how to keep your pets safe before, during and after an emergency, visi <a href="https://www.alberta.ca/pet-preparedness.aspx">Pet preparedness</a></p>
+        </div>
+    </footer>
+</body>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</html>
