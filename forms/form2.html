@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+        * {
+            box-sizing: content-box;
+        }
+
+        body {
+            /* background-color: black; */
+            /* color: red; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 15px 30px;
+            font-size: 17px;
+            padding: 8px;
+            /* border: 2px solid red; */
+
+        }
+
+        .container {
+            background: color #fde9e9;
+            padding: 5px 40px 15px 20px;
+            border: 2px solid lightgray;
+            border-radius: 4px;
+            /* width: 500px; */
+            align-tracks: left;
+            justify-content: right;
+            justify-items: right;
+
+        }
+
+
+
+
+        input[type="Email"],
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #fcc;
+            background-color: rgb(253, 243, 249);
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            border: 2px solid black;
+        }
+
+        fieldset {
+            background-color: #f2f2f2;
+            border: 2px solid #fcc;
+        }
+
+        /* .main_heading {
+    text-align: center;
+    text-decoration: underline;
+} */
+
+        input[type="submit"] {
+            background-color: rgb(250, 163, 163);
+            color: black;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            /* align-items: center; */
+            /* justify-content: center; */
+            width: 100%;
+
+        }
+        button{
+            background-color: #fcc;
+            border: none;
+            font-size: 25px;
+            text-align: center;
+            width: 100%;
+            padding: 10px 15px;
+        }
+
+        button a{
+            text-decoration: none;
+
+        }
+        button:hover {
+            background-color: rgb(212, 151, 151);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1 class="main_heading"></h1> -->
+    <!-- <hr> -->
+
+    <div class="container">
+        <form action="">
+
+            <!-- <h2 >People imformation</h2> -->
+            <!-- <input type="text" name="" >Name -->
+            <p>Name: *<input type="text" name="name" placeholder="Enter Your Name" required></p>
+            <p>Age: <input type="number" name="name" placeholder="Enter Your age" required></p>
+            <fieldset>
+                <legend>Gender*</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="male" required>
+                    Female <input type="radio" name="gender" id="female" required>
+                </p>
+            </fieldset>
+
+            <p>Nationality* : <input type="text" name="name" placeholder="Enter your contry name" required></p>
+
+            <p>
+                Address :<textarea name="address" id="address" col="500" row="10"></textarea>
+            </p>
+
+            <p>Email : *<input type="email" name="email" id="email" placeholder="Email :"></p>
+
+            <p>pincode : *<input type="number" name="pincode" id="pincode" placeholder="Pincode :" required></p>
+
+
+
+            <hr />
+
+            <!-- <input href="form response.html" type="submit" name="" id="" value="Submit"> -->
+            <button >
+                <a href="form response.html" type="submit" name="" id="" value="submit" target="_blank">Submit</a>
+            </button>
+            <br>
+    </div>
+
+    </form>
+    </div>
+</body>
+
+</html>
