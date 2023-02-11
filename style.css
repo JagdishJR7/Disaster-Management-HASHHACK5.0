@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   scroll-behavior: smooth;
-  background-color: rgb(126, 131, 80);
+  background-color: rgb(105, 109, 88);
   color: white;
 }
 
@@ -45,7 +45,6 @@ footer ul a {
   font-size: 30px;
 }
 
-
 /* home tag  */
 .home {
   text-decoration: none;
@@ -73,32 +72,32 @@ nav ul li a {
 } */
 
 /* content stying  */
-.container{
+.container {
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 70px;
   box-shadow: 0px 0px 5px 5px #eee;
   display: flex;
-  background-color: rgb(241, 219, 177);
+  background-color: rgb(73, 69, 61);
   /* background-color: rgb(16, 17, 17); */
   /* background-image: url(/img/extra\ section.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
 }
-.content{
+.content {
   width: 500px;
   height: 400px;
   margin: 15px;
   font-size: 20px;
 }
-  
-.content h1 b{
+
+.content h1 b {
   color: rgb(62, 161, 241);
   font-size: 50px;
 }
-.container img{
+.container img {
   /* align-items: right; */
-  width: 500px ;
+  width: 500px;
   height: 300px;
   /* margin-left: 150px; */
   margin-top: 50px;
@@ -142,6 +141,24 @@ main {
   border-radius: 0.5rem;
   overflow: hidden;
   margin-bottom: 100px;
+  background-color: rgb(107, 116, 116);
+}
+.h-card h2{
+  color: rgb(247, 156, 171);
+}
+.h-card{
+  font-size: 20px;
+}
+.h-card li {
+  color: white;
+}
+.h-card b{
+  color: rgb(40, 40, 44);
+  font-size: 20px;
+}
+.h-card a {
+  color: rgb(238, 227, 125);
+  text-decoration: underline;
 }
 .card-content {
   margin-left: 50px;
@@ -156,7 +173,7 @@ main {
 }
 .read-btn {
   all: unset;
-  color:white;
+  color: white;
   font-weight: 600;
   /* border-bottom: 1px solid whitesmoke ; */
   text-decoration: underline white;
@@ -243,3 +260,4 @@ a {
   text-decoration: none;
   color: #000;
 }
+
