@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Disaster Management Web App</title>
+  <link rel="stylesheet" href="during.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="heading"><b>During</b>The Disaster</h1>
+  </header>
+  <nav class="navigation">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/BeforeD/before.html">BeforeD</a></li>
+      <li><a href="/AfterD/after.html">AfterD</a></li>
+      <li><a href="/D preparedness/preparedness.html">Preparedness</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <p>This web app provides information on natural disasters and resources for preparedness and recovery.</p>
+  </main>
+
+  <footer>
+    <ul>
+      <p>Hazards vary depending on where you live. Identify the hazards near you so you can create your emergency plan.
+        </li>
+      <p>Emergencies affect us all differently and help is not always available in the way we expect. Learn what steps
+        you can take to ensure your needs are met when it matters most.</li>
+        <hr>
+        <button class="accordion">Shelter-in-place</button>
+      <div class="panel">
+        <p>Authorities may direct you to shelter-in-place. If this happens, you should follow their instructions.</p>
+        <p>These fact sheets can help you plan to shelter-in-place for different situations.</p>
+        <ul>
+          <p><a style="color:blue;" href="https://open.alberta.ca/publications/shelter-in-place-severe-weather">Shelter
+              in place: severe
+              weather </a></li>
+          <p><a href="https://open.alberta.ca/publications/shelter-in-place-hazardous-air">Shelter in place: hazardous
+              air</a></li>
+        </ul>
+
+      </div>
+
+
+
+      <button class="accordion">Evacuation alerts and orders</button>
+      <div class="panel">
+        <ul>
+          <p>Alerts are issued to provide critical information about an emergency or disaster, including where it is
+            happening and what actions need to be taken.</p>
+          <p>An evacuation alert warns the public of a potential or current threat. If an alert is issued, you should
+            prepare to evacuate.</p>
+          <p>An evacuation order is used when the public must leave the area for their own safety.</p>
+        </ul>
+      </div>
+
+      <button class="accordion">Emergancy evacuation payments</button>
+      <div class="panel">
+        <ul>
+          <p>When a mandatory evacuation order is issued, you may be eligible for an Emergency Evacuation Payment.</p>
+          <p>This one-time emergency financial assistance of $625 per adult and $300 for each dependent child under the
+            age of 18 is meant to help with the costs of facing a mandatory evacuation during an uninsurable event.</p>
+          <p>During an emergency, evacuees can apply for the payment at <a
+              href="https://www.alberta.ca/emergency.aspx">Alberta.ca/emergency.</a></p>
+        </ul>
+      </div>
+
+      <button class="accordion">Stay informed</button>
+      <div class="panel">
+        <p>Directions from authorities can vary based on the emergency. They can also change very quickly.</p>
+        <ul>
+          <p>Ensure you are monitoring the alerts you receive through the <a
+              href="http://www.emergencyalert.alberta.ca/content/about/signup.html">Alberta Emergency Alert app</a> so
+            you can always be up-to-date with the latest information.</p>
+          <p>If you’re able to, check your community’s website or social media channels to see what updates they are
+            posting.</p>
+          <p>Check <a href="https://511.alberta.ca/">Alberta 511</a> for current road conditions before you travel</p>
+        </ul>
+      </div>
+
+      <button class="accordion">Connect with neighbours</button>
+      <div class="panel">
+        <p>If something happens in your neighbourhood, ask yourself these questions:</p>
+        <ul>
+          <p>Who might need extra assistance?</p>
+          <p>Who can you ask to check on your pets?</p>
+          <p>Who is first aid-certified</p>
+
+        </ul>
+        <h3>If there is time</h3>
+        <ul>
+          <p>In some cases, authorities will give instructions on how to protect your home. They may ask you to shut off
+            water, electricity or gas. Do not shut off your utilities unless directed to do so.</p>
+          <p>Let your out-of-town contact know what is happening in case you are separated from loved ones</p>
+          <p>Leave a note in your mailbox letting authorities know where you are going and how you can be reached.</p>
+
+        </ul>
+      </div>
+
+      <button class="accordion">If there is time</button>
+      <div class="panel">
+        <ul>
+          <p>In some cases, authorities will give instructions on how to protect your home. They may ask you to shut off
+            water, electricity or gas. Do not shut off your utilities unless directed to do so.</p>
+          <p>Let your out-of-town contact know what is happening in case you are separated from loved ones.</p>
+          <p>Leave a note in your mailbox letting authorities know where you are going and how you can be reached.</p>
+
+        </ul>
+      </div>
+    </ul>
+  </footer>
+</body>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</html>
